@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    line-height: 1.1;
+    text-wrap: balance;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --cremisi: #DC143C;
+    --azzurro: #007FFF;
+    --biancoA: #E0FFFF;
+    --biancoAdue: #ADD8E6;
+    --biancoAtre: #F0F8FF;
+    --biancoCone: #FFF0F5;
+    --biancoCdue: #FFE4E1;
+    --biancoCtre: #FFF5EE;
+
+    --ff-happyMonkey: "Happy Monkey", serif;
+    --ff-fredoka: 'Fredoka', sans-serif;
+}
+
+body {
+    font-family: var(--ff-happyMonkey);
+    background: var(--biancoAdue);
+    line-height: 1.5;
+}
+
+/* main {
+    margin-inline: 160px;
+} */
+
+.hero {
+    min-height: 70dvh;
+    background: url(/images/ariccia-one.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    color: var(--biancoAtre);
+    background: rgba( 220, 20, 60, 0.3);
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    box-shadow: 0 8px 32px 0 rgba( 220, 20, 60, .05);
+    backdrop-filter: blur( 1px );
+    border-radius: 10px;
+}
+
+.activities {
+    max-width: 1200px;
+    margin-inline: auto;
+    margin-block-start: 5.625rem;
+    /* padding: 2em 4em; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+}
+
+.activities article {
+    background: var(--biancoCdue);
+    border-radius: 1rem;
+    overflow: hidden;
+
+    & img {
+        min-height: 20dvh;
+    }
+}
+
+article > .activities__card-content {
+    padding: 1em 1.5em;
+
+    & h2 {
+        font-size: 1.3rem;
+        margin-block-end: 1rem;
+    }
+
+    & p {
+        font-size: .9rem;
+        text-wrap: pretty;
+    }
+}
+
+.guide {
+    margin-block-start: 5.625rem;
+}
