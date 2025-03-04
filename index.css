@@ -145,11 +145,11 @@ body {
     & p {
         color: var(--clr-azureRadiance900);
         font-style: italic;
+        font-size: .9rem;
     }
 
     & p:has(b) {
         color: var(--clr-azureRadiance950);
-        margin-block-start: 1rem;
         font-style: normal;
     }
 }
